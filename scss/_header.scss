@@ -1,0 +1,23 @@
+// ESTILOS DEL HEADER
+.header {
+    background-color: $color-primary;
+    min-height: 750px;
+
+    nav {
+        background-color: $color-primary;
+    }
+
+    .banner {
+        min-height: 300px;
+    }
+
+    .wave {
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .btn-green-secondary {
+        background: $color-green-secondary;
+    }
+}

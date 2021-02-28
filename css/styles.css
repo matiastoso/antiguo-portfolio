@@ -1,0 +1,27 @@
+.header {
+  background-color: #13286f;
+  min-height: 750px;
+}
+
+.header nav {
+  background-color: #13286f;
+}
+
+.header .banner {
+  min-height: 300px;
+}
+
+.header .wave {
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.header .btn-green-secondary {
+  background: #25c998;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+/*# sourceMappingURL=styles.css.map */
