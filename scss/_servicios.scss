@@ -1,0 +1,28 @@
+#servicios{
+    .subtitulo {
+        position: relative;
+        display: block;
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            height: 8px;
+            border-radius: 15px;
+            width: 310px;
+            left: calc(50% - 310px / 2);
+            background: linear-gradient(to right, #345cfd, #25c998);
+        }
+    }
+
+    .imagen {
+        margin: 0px auto;
+        width: 320px;
+        height: 320px;
+
+        img {
+            width: 320px;
+            height: 320px;
+        }
+    }
+}

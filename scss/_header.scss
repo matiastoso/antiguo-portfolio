@@ -5,6 +5,24 @@
 
     nav {
         background-color: $color-primary;
+
+        .navbar-brand {
+            cursor: pointer;
+            letter-spacing: 1px;
+            transition: all .3s;
+
+            &:hover {
+                text-shadow: 2px 2px 1px black;
+            }
+        }
+
+        .nav-link {
+            transition: all .3s;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 
     .banner {
@@ -17,7 +35,23 @@
         right: 0;
     }
 
-    .btn-green-secondary {
+    .btn:nth-child(1) {
+        background: $color-dark-secondary;
+        transition: all .5s;
+
+            &:hover {
+                background: $color-secondary;
+                box-shadow: 1px 1px 3px $color-secondary;
+            }
+    }
+
+    .btn:nth-child(2) {
         background: $color-green-secondary;
+        transition: all .5s;
+
+            &:hover {
+                background: lighten($color-green-secondary, 7);
+                box-shadow: 1px 1px 3px lighten($color-green-secondary, 7);
+            }
     }
 }
