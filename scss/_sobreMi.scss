@@ -1,0 +1,76 @@
+#sobreMi {
+    background: $color-green-secondary;
+    padding: 50px 0px;
+
+    .subtitulo {
+        position: relative;
+        display: block;
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            height: 8px;
+            border-radius: 15px;
+            width: 310px;
+            left: calc(50% - 310px / 2);
+            background: linear-gradient(to right, $color-primary, $color-dark-secondary);
+        }
+    }
+
+    .img-fluid {
+        height: 550px;
+        box-shadow: 8px 8px 21px #444444;
+    }
+
+    h3 {
+        color: #ffffff;
+        text-shadow: 2px 2px 6px black;
+    }
+
+    p {
+        word-spacing: 1px;
+        color: #ffffff;
+        text-shadow: 1px 1px 3px black;
+    }
+
+    i {
+        font-size: 60px;
+        position: relative;
+        z-index: 1;
+        text-shadow: 2px 2px 3px #444444;
+        transition: all .5s;
+
+        &:hover {
+            text-shadow: 4px 4px 4px #444444;
+        }
+
+        &:nth-child(1) {
+            color: $color-html;
+        }
+
+        &:nth-child(2) {
+            color: $color-css;
+        }
+
+        &:nth-child(3) {
+            color: $color-javascript;
+        }
+
+        &:nth-child(4) {
+            color: $color-sass;
+        }
+
+        &:nth-child(5) {
+            color: $color-bootstrap;
+        }
+
+        &:nth-child(6) {
+            color: $color-figma;
+        }
+
+        &:nth-child(7) {
+            color: $color-figma;
+        }
+    }
+}

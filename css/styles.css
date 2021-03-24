@@ -27,10 +27,6 @@
   text-decoration: underline;
 }
 
-.header .banner {
-  min-height: 300px;
-}
-
 .header .wave {
   bottom: 0;
   left: 0;
@@ -61,6 +57,12 @@
           box-shadow: 1px 1px 3px #37daaa;
 }
 
+@media (max-width: 768px) {
+  .header {
+    height: 900px;
+  }
+}
+
 #servicios .subtitulo {
   position: relative;
   display: block;
@@ -82,11 +84,129 @@
   margin: 0px auto;
   width: 320px;
   height: 320px;
+  -webkit-box-shadow: 3px 3px 10px #555;
+          box-shadow: 3px 3px 10px #555;
 }
 
 #servicios .imagen img {
   width: 320px;
   height: 320px;
+}
+
+#sobreMi {
+  background: #25c998;
+  padding: 50px 0px;
+}
+
+#sobreMi .subtitulo {
+  position: relative;
+  display: block;
+}
+
+#sobreMi .subtitulo::after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 8px;
+  border-radius: 15px;
+  width: 310px;
+  left: calc(50% - 310px / 2);
+  background: -webkit-gradient(linear, left top, right top, from(#13286f), to(#345cfd));
+  background: linear-gradient(to right, #13286f, #345cfd);
+}
+
+#sobreMi .img-fluid {
+  height: 550px;
+  -webkit-box-shadow: 8px 8px 21px #444444;
+          box-shadow: 8px 8px 21px #444444;
+}
+
+#sobreMi h3 {
+  color: #ffffff;
+  text-shadow: 2px 2px 6px black;
+}
+
+#sobreMi p {
+  word-spacing: 1px;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px black;
+}
+
+#sobreMi i {
+  font-size: 60px;
+  position: relative;
+  z-index: 1;
+  text-shadow: 2px 2px 3px #444444;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+#sobreMi i:hover {
+  text-shadow: 4px 4px 4px #444444;
+}
+
+#sobreMi i:nth-child(1) {
+  color: #f16524;
+}
+
+#sobreMi i:nth-child(2) {
+  color: #2965f1;
+}
+
+#sobreMi i:nth-child(3) {
+  color: #f3cf01;
+}
+
+#sobreMi i:nth-child(4) {
+  color: #ce679a;
+}
+
+#sobreMi i:nth-child(5) {
+  color: #563d7c;
+}
+
+#sobreMi i:nth-child(6) {
+  color: #ff7262;
+}
+
+#sobreMi i:nth-child(7) {
+  color: #ff7262;
+}
+
+#proyectos .card {
+  -webkit-box-shadow: 1px 1px 7px #888;
+          box-shadow: 1px 1px 7px #888;
+}
+
+#proyectos .subtitulo {
+  position: relative;
+  display: block;
+  z-index: 4;
+}
+
+#proyectos .subtitulo::after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 8px;
+  z-index: -1;
+  border-radius: 15px;
+  width: 310px;
+  left: calc(50% - 310px / 2);
+  background: -webkit-gradient(linear, left top, right top, from(#345cfd), to(#25c998));
+  background: linear-gradient(to right, #345cfd, #25c998);
+}
+
+#proyectos a {
+  background: #345cfd;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+#proyectos a:hover {
+  background: #2391ff;
+  -webkit-box-shadow: 1px 1px 3px #2391ff;
+          box-shadow: 1px 1px 3px #2391ff;
 }
 
 body {

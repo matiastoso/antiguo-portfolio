@@ -1,13 +1,19 @@
-#servicios{
+#proyectos {
+    .card {
+        box-shadow: 1px 1px 7px #888;
+    }
+
     .subtitulo {
         position: relative;
         display: block;
+        z-index: 4;
 
         &::after {
             content: '';
             display: block;
             position: absolute;
             height: 8px;
+            z-index: -1;
             border-radius: 15px;
             width: 310px;
             left: calc(50% - 310px / 2);
@@ -15,16 +21,13 @@
         }
     }
 
-    .imagen {
-        margin: 0px auto;
-        width: 320px;
-        height: 320px;
-        box-shadow: 3px 3px 10px #555;
+    a {
+        background: $color-dark-secondary;
+        transition: all .5s;
 
-        img {
-            // border: 7px solid $color-dark-secondary;
-            width: 320px;
-            height: 320px;
-        }
+            &:hover {
+                background: $color-secondary;
+                box-shadow: 1px 1px 3px $color-secondary;
+            }
     }
 }

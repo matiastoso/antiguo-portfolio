@@ -25,10 +25,6 @@
         }
     }
 
-    .banner {
-        min-height: 300px;
-    }
-
     .wave {
         bottom: 0;
         left: 0;
@@ -53,5 +49,11 @@
                 background: lighten($color-green-secondary, 7);
                 box-shadow: 1px 1px 3px lighten($color-green-secondary, 7);
             }
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        height: 900px;
     }
 }
