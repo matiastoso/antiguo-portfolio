@@ -1,4 +1,4 @@
-#servicios{
+#contacto {
     .subtitulo {
         position: relative;
         display: block;
@@ -15,20 +15,10 @@
         }
     }
 
-    .btn-primary {
-        background-color: linear-gradient(to right, #345cfd, #25c998);
-    }
+    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.7) rgba(0,0,0,.9)), url('../images/contacto.jpg');
+    background-size: cover;
 
-    .imagen {
-        margin: 0px auto;
-        width: 320px;
-        height: 320px;
-        box-shadow: 3px 3px 10px #555;
-
-        img {
-            // border: 7px solid $color-dark-secondary;
-            width: 320px;
-            height: 320px;
-        }
+    .textarea {
+        height: 8rem;
     }
 }

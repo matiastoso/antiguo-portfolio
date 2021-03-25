@@ -80,6 +80,10 @@
   background: linear-gradient(to right, #345cfd, #25c998);
 }
 
+#servicios .btn-primary {
+  background-color: linear-gradient(to right, #345cfd, #25c998);
+}
+
 #servicios .imagen {
   margin: 0px auto;
   width: 320px;
@@ -207,6 +211,33 @@
   background: #2391ff;
   -webkit-box-shadow: 1px 1px 3px #2391ff;
           box-shadow: 1px 1px 3px #2391ff;
+}
+
+#contacto {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.7))), url("../images/contacto.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7) rgba(0, 0, 0, 0.9)), url("../images/contacto.jpg");
+  background-size: cover;
+}
+
+#contacto .subtitulo {
+  position: relative;
+  display: block;
+}
+
+#contacto .subtitulo::after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 8px;
+  border-radius: 15px;
+  width: 310px;
+  left: calc(50% - 310px / 2);
+  background: -webkit-gradient(linear, left top, right top, from(#345cfd), to(#25c998));
+  background: linear-gradient(to right, #345cfd, #25c998);
+}
+
+#contacto .textarea {
+  height: 8rem;
 }
 
 body {
