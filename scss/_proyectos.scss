@@ -23,8 +23,8 @@
 
     a {
         background: $color-dark-secondary;
-        transition: all .3s;
-
+            transition: all .3s;
+    
         &:hover {
             background: $color-secondary;
         }
