@@ -88,8 +88,8 @@
   margin: 0px auto;
   width: 320px;
   height: 320px;
-  -webkit-box-shadow: 3px 3px 10px #555;
-          box-shadow: 3px 3px 10px #555;
+  -webkit-box-shadow: 4px 4px 12px #555;
+          box-shadow: 4px 4px 12px #555;
 }
 
 #servicios .imagen img {
@@ -203,14 +203,12 @@
 
 #proyectos a {
   background: #345cfd;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 #proyectos a:hover {
   background: #2391ff;
-  -webkit-box-shadow: 1px 1px 3px #2391ff;
-          box-shadow: 1px 1px 3px #2391ff;
 }
 
 #contacto {
@@ -236,8 +234,32 @@
   background: linear-gradient(to right, #345cfd, #25c998);
 }
 
-#contacto .textarea {
+#contacto form .textarea {
   height: 8rem;
+}
+
+#contacto form .btn {
+  background: #345cfd;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+#contacto form .btn:hover {
+  background: #2391ff;
+}
+
+.footer {
+  background-color: #345cfd;
+}
+
+.footer i.fab {
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.footer i.fab:hover {
+  text-shadow: 0px 0px 15px #13286f;
 }
 
 body {

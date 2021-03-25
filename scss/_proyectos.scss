@@ -23,11 +23,10 @@
 
     a {
         background: $color-dark-secondary;
-        transition: all .5s;
+        transition: all .3s;
 
-            &:hover {
-                background: $color-secondary;
-                box-shadow: 1px 1px 3px $color-secondary;
-            }
+        &:hover {
+            background: $color-secondary;
+        }
     }
 }

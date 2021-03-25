@@ -18,7 +18,18 @@
     background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.7) rgba(0,0,0,.9)), url('../images/contacto.jpg');
     background-size: cover;
 
-    .textarea {
-        height: 8rem;
+    form {
+        .textarea {
+            height: 8rem;
+        }
+
+        .btn {
+            background: $color-dark-secondary;
+            transition: all .3s;
+    
+            &:hover {
+                background: $color-secondary;
+            }
+        }
     }
 }
