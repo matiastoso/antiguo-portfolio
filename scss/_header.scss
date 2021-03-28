@@ -9,10 +9,10 @@
         .navbar-brand {
             cursor: pointer;
             letter-spacing: 1px;
-            transition: all .3s;
+            transition: all .4s;
 
             &:hover {
-                text-shadow: 2px 2px 1px black;
+                text-shadow: 2px 2px 1px $color-green-secondary;
             }
         }
 
@@ -31,23 +31,23 @@
         right: 0;
     }
 
-    .btn:nth-child(1) {
+    .boton1 {
         background: $color-dark-secondary;
         transition: all .5s;
 
             &:hover {
                 background: $color-secondary;
-                box-shadow: 1px 1px 3px $color-secondary;
+                box-shadow: 1px 1px 4px $color-secondary;
             }
     }
 
-    .btn:nth-child(2) {
+    .boton2 {
         background: $color-green-secondary;
         transition: all .5s;
 
             &:hover {
                 background: lighten($color-green-secondary, 7);
-                box-shadow: 1px 1px 3px lighten($color-green-secondary, 7);
+                box-shadow: 1px 1px 4px lighten($color-green-secondary, 7);
             }
     }
 }

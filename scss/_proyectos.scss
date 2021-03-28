@@ -1,6 +1,19 @@
 #proyectos {
     .card {
-        box-shadow: 1px 1px 7px #888;
+        box-shadow: 1px 1px 7px #999999;
+        transition: all .3s;
+
+        &-title {
+            transition: all .5s;
+        }
+
+        &:hover {
+            box-shadow: 4px 4px 13px #999999;
+        }
+
+        &:hover .card-title {
+            color: $color-dark-secondary;
+        }
     }
 
     .subtitulo {

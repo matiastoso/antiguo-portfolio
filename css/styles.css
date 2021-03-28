@@ -10,12 +10,12 @@
 .header nav .navbar-brand {
   cursor: pointer;
   letter-spacing: 1px;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all .4s;
+  transition: all .4s;
 }
 
 .header nav .navbar-brand:hover {
-  text-shadow: 2px 2px 1px black;
+  text-shadow: 2px 2px 1px #25c998;
 }
 
 .header nav .nav-link {
@@ -33,28 +33,28 @@
   right: 0;
 }
 
-.header .btn:nth-child(1) {
+.header .boton1 {
   background: #345cfd;
   -webkit-transition: all .5s;
   transition: all .5s;
 }
 
-.header .btn:nth-child(1):hover {
+.header .boton1:hover {
   background: #2391ff;
-  -webkit-box-shadow: 1px 1px 3px #2391ff;
-          box-shadow: 1px 1px 3px #2391ff;
+  -webkit-box-shadow: 1px 1px 4px #2391ff;
+          box-shadow: 1px 1px 4px #2391ff;
 }
 
-.header .btn:nth-child(2) {
+.header .boton2 {
   background: #25c998;
   -webkit-transition: all .5s;
   transition: all .5s;
 }
 
-.header .btn:nth-child(2):hover {
+.header .boton2:hover {
   background: #37daaa;
-  -webkit-box-shadow: 1px 1px 3px #37daaa;
-          box-shadow: 1px 1px 3px #37daaa;
+  -webkit-box-shadow: 1px 1px 4px #37daaa;
+          box-shadow: 1px 1px 4px #37daaa;
 }
 
 @media (max-width: 768px) {
@@ -178,8 +178,24 @@
 }
 
 #proyectos .card {
-  -webkit-box-shadow: 1px 1px 7px #888;
-          box-shadow: 1px 1px 7px #888;
+  -webkit-box-shadow: 1px 1px 7px #999999;
+          box-shadow: 1px 1px 7px #999999;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+#proyectos .card-title {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+#proyectos .card:hover {
+  -webkit-box-shadow: 4px 4px 13px #999999;
+          box-shadow: 4px 4px 13px #999999;
+}
+
+#proyectos .card:hover .card-title {
+  color: #345cfd;
 }
 
 #proyectos .subtitulo {
@@ -259,7 +275,9 @@
 }
 
 .footer i.fab:hover {
-  text-shadow: 0px 0px 15px #13286f;
+  text-shadow: 0px 0px 35px #1a1d53;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 body {
