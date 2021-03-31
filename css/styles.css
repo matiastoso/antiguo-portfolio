@@ -1,6 +1,7 @@
 .header {
   background-color: #13286f;
   min-height: 750px;
+  overflow-x: hidden;
 }
 
 .header nav {
@@ -25,6 +26,27 @@
 
 .header nav .nav-link:hover {
   text-decoration: underline;
+}
+
+.header .banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("/images/blob.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 600px;
+  height: 490px;
+}
+
+.header .perfil {
+  width: 240px;
 }
 
 .header .wave {
@@ -57,9 +79,48 @@
           box-shadow: 1px 1px 4px #37daaa;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .header {
-    height: 900px;
+    height: 700px;
+  }
+  .header .banner {
+    margin-top: 3rem;
+    background-size: 490px;
+    height: 380px;
+  }
+  .header .banner .perfil {
+    width: 200px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    height: 860px;
+  }
+  .header .navbar-nav {
+    border-radius: 1rem;
+    background: rgba(37, 201, 152, 0.9);
+  }
+  .header .banner {
+    background-size: 550px;
+    height: 380px;
+  }
+  .header .banner .perfil {
+    width: 220px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    height: 800px;
+  }
+  .header .banner {
+    margin-top: .5rem;
+    background-size: 420px;
+    height: 390px;
+  }
+  .header .banner .perfil {
+    width: 185px;
   }
 }
 

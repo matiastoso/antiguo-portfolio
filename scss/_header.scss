@@ -2,6 +2,7 @@
 .header {
     background-color: $color-primary;
     min-height: 750px;
+    overflow-x: hidden;
 
     nav {
         background-color: $color-primary;
@@ -24,6 +25,22 @@
             }
         }
     }
+    
+    .banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-image: url('/images/blob.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 600px;
+        height: 490px;
+    }
+
+    .perfil {
+        width: 240px;
+    }
 
     .wave {
         bottom: 0;
@@ -35,25 +52,72 @@
         background: $color-dark-secondary;
         transition: all .5s;
 
-            &:hover {
-                background: $color-secondary;
-                box-shadow: 1px 1px 4px $color-secondary;
-            }
+        &:hover {
+            background: $color-secondary;
+            box-shadow: 1px 1px 4px $color-secondary;
+        }
     }
 
     .boton2 {
         background: $color-green-secondary;
         transition: all .5s;
 
-            &:hover {
-                background: lighten($color-green-secondary, 7);
-                box-shadow: 1px 1px 4px lighten($color-green-secondary, 7);
-            }
+        &:hover {
+            background: lighten($color-green-secondary, 7);
+            box-shadow: 1px 1px 4px lighten($color-green-secondary, 7);
+        }
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .header {
-        height: 900px;
+        height:700px;
+
+        .banner {
+            margin-top: 3rem;
+            background-size: 490px;
+            height: 380px;
+        
+            .perfil {
+                width: 200px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 767px) {
+.header {
+    height: 860px;
+
+        .navbar-nav {
+            border-radius: 1rem;
+            background: rgba($color-green-secondary, .9);
+        }
+
+        .banner {
+            background-size: 550px;
+            height: 380px;
+        
+            .perfil {
+                width: 220px;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        height: 800px;
+
+        .banner {
+            margin-top: .5rem;
+            background-size: 420px;
+            height: 390px;
+        
+            .perfil {
+                width: 185px;
+            }
+        }
     }
 }
