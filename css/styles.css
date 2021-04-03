@@ -8,15 +8,8 @@
   background-color: #13286f;
 }
 
-.header nav .navbar-brand {
-  cursor: pointer;
-  letter-spacing: 1px;
-  -webkit-transition: all .4s;
-  transition: all .4s;
-}
-
-.header nav .navbar-brand:hover {
-  text-shadow: 2px 2px 1px #25c998;
+.header nav .logo {
+  width: 85px;
 }
 
 .header nav .nav-link {
@@ -42,7 +35,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 600px;
-  height: 490px;
+  min-height: 490px;
 }
 
 .header .perfil {
@@ -79,14 +72,18 @@
           box-shadow: 1px 1px 4px #37daaa;
 }
 
+.menu-active {
+  height: 1130px !important;
+}
+
 @media (max-width: 992px) {
   .header {
-    height: 700px;
+    height: 900px;
   }
   .header .banner {
     margin-top: 3rem;
     background-size: 490px;
-    height: 380px;
+    min-height: 380px;
   }
   .header .banner .perfil {
     width: 200px;

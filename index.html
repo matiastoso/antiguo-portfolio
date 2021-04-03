@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
     <link rel="stylesheet" href="css/styles.css">
     <title>Matias Toso - Desarrollador web</title>
@@ -14,8 +15,11 @@
     <header class="container-fluid header position-relative" id="header">
         <nav class="navbar navbar-expand-md navbar-dark pt-4">
             <div class="container">
-                <h1 id="h1" class="navbar-brand mb-0 h1 fs-4">Matías Toso</H1>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="https://matiastoso.netlify.app">
+                    <img src="images/logo.png" class="logo" alt="Logo">
+                </a>
+
+                <button id="btnMenu" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -218,11 +222,13 @@
 
         <div class="container d-flex justify-content-center">
             <a href="https://github.com/matiastoso" target="_blank"><i class="fab fa-github text-light fs-1"></i></a>
-            <a href="https://www.instagram.com/matiastoso/" target="_blank"><i class="fab fa-instagram text-light fs-1 mx-4"></i></a>
-            <a href="https://wa.me/message/FCES55AQWZBQC1" target="_blank"><i class="fab fa-whatsapp text-light fs-1"></i></a>
+            <a href="https://www.instagram.com/matiastoso/" target="_blank"><i class="fab fa-instagram text-light fs-1 ms-3"></i></a>
+            <a href="https://wa.me/message/FCES55AQWZBQC1" target="_blank"><i class="fab fa-whatsapp text-light fs-1 ms-3"></i></a>
+            <a href="https://www.linkedin.com/in/matias-toso/" target="_blank"><i class="fab fa-linkedin text-light fs-1 ms-3"></i></a>
         </div>
     </footer>
 
+    <script src="menu.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
